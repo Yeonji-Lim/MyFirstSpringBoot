@@ -1,8 +1,6 @@
-package com.firstspring.domain;
+package com.firstspring.webservice;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class SpringWebserviceApplicationTest {
 
