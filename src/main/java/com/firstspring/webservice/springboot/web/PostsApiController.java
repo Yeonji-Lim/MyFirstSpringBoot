@@ -1,7 +1,9 @@
 package com.firstspring.webservice.springboot.web;
 
 import com.firstspring.webservice.springboot.domain.posts.PostService;
+import com.firstspring.webservice.springboot.web.dto.PostsResponseDto;
 import com.firstspring.webservice.springboot.web.dto.PostsSaveRequestDto;
+import com.firstspring.webservice.springboot.web.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

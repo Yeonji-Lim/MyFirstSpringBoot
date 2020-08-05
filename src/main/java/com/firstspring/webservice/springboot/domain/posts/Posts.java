@@ -2,6 +2,7 @@ package com.firstspring.webservice.springboot.domain.posts;
 
 //Posts 클래스는 setter 메소드가 없다. Entity클래스에서는 절대 setter클래스를 만들지 않는다.
 
+import com.firstspring.webservice.springboot.domain.BaseTimeEntity;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
@@ -15,7 +16,7 @@ import javax.persistence.Id;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity //테이블과 링크될 클래스임을 나타냄, 언더스코어 네이밍으로 이름을 매칭함
-public class Posts {    //실제 DB의 테이블과 매칭될 클래스이며 보통 entity클래스라고도 함
+public class Posts extends BaseTimeEntity {    //실제 DB의 테이블과 매칭될 클래스이며 보통 entity클래스라고도 함
 
     @Id //해당 테이블의 PK필드
     @GeneratedValue //PK 생성 규칙, 스프링부트2.0에서는 GenerationType.Identity 옵셥을 추가해야 auto_increment가 됨
